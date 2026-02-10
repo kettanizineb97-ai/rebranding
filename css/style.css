@@ -60,11 +60,11 @@ body {
 .background-lines {
   position: absolute;
   inset: 0;
-  stroke: rgba(255,255,255,0.25);
-  stroke-width: 1.2;
+  stroke: rgba(255,255,255,0.35); /* plus visibles */
+  stroke-width: 1.6;
   fill: none;
 }
-
+/* Headline */
 .headline {
   position: absolute;
   top: 160px; /* était trop haut */
@@ -84,12 +84,12 @@ body {
 /* CENTER */
 .center {
   position: absolute;
-  bottom: 120px;
+  bottom: 180px; /* au lieu de 120px */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }
 
 .logo-box {
@@ -126,13 +126,13 @@ body {
 }
 
 /* LEFT */
-.left.b1 { left: 120px; top: 260px; }
-.left.b2 { left: 240px; top: 420px; }
-.left.b3 { left: 180px; bottom: 160px; }
+.left.b1 { left: 140px; top: 300px; }
+.left.b2 { left: 260px; top: 460px; }
+.left.b3 { left: 200px; bottom: 200px; }
 
 /* RIGHT */
-.right.b4 { right: 200px; top: 240px; }
-.right.b5 { right: 160px; top: 360px; }
-.right.b6 { right: 260px; bottom: 260px; }
-.right.b7 { right: 200px; bottom: 140px; }
+.right.b4 { right: 240px; top: 300px; }
+.right.b5 { right: 180px; top: 420px; }
+.right.b6 { right: 300px; bottom: 300px; }
+.right.b7 { right: 220px; bottom: 180px; }
 
