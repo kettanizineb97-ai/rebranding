@@ -65,20 +65,20 @@ body {
   fill: none;
 }
 
-/* HEADLINE */
 .headline {
   position: absolute;
-  top: 120px;
+  top: 160px; /* était trop haut */
   left: 50%;
   transform: translateX(-50%);
   background: white;
   color: #1e88e5;
-  padding: 22px 36px;
-  border-radius: 50px;
-  font-size: 20px;
+  padding: 26px 46px; /* + respirant */
+  border-radius: 60px;
+  font-size: 22px; /* + impact */
   font-weight: 600;
   text-align: center;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  max-width: 720px;
 }
 
 /* CENTER */
