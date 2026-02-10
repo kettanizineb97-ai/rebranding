@@ -1,137 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Value4Finance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: #0b2c83;
-  color: #fff;
-  overflow-x: hidden;
-}
+<body>
 
-/* NAVBAR */
-.navbar {
-  height: 80px;
-  padding: 0 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #0a2b80, #0b3fa6);
-}
+<header class="navbar">
+  <div class="logo">Value<span>4</span>Finance</div>
 
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-}
+  <nav>
+    <a href="#">Pourquoi V4F ?</a>
+    <a href="#">Notre socle</a>
+    <a href="#">Notre engagement</a>
+    <a href="#">Notre service</a>
+  </nav>
 
-.logo span {
-  color: #4da6ff;
-}
+  <button class="cta">Postuler</button>
+</header>
 
-.navbar nav a {
-  margin: 0 18px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-}
+<main class="hero">
 
-.cta {
-  background: white;
-  color: #0a2b80;
-  border: none;
-  padding: 12px 26px;
-  border-radius: 40px;
-  font-weight: 600;
-  cursor: pointer;
-}
+  <!-- lignes organiques -->
+  <svg class="background-lines" viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <path d="M0,300 C200,350 400,200 600,250" />
+    <path d="M1440,200 C1200,350 1000,400 800,500" />
+    <path d="M200,900 C400,700 700,650 900,600" />
+  </svg>
 
-/* HERO */
-.hero {
-  position: relative;
-  height: calc(100vh - 80px);
-  background: radial-gradient(circle at top right, #3cc3ff, #0b2c83 60%);
-  overflow: hidden;
-}
+  <!-- slogan -->
+  <div class="headline">
+    Votre partenaire le plus adapté en renfort<br>
+    opérationnel et en production financière
+  </div>
 
-/* LINES */
-.background-lines {
-  position: absolute;
-  inset: 0;
-  stroke: rgba(255,255,255,0.25);
-  stroke-width: 1.2;
-  fill: none;
-}
+  <!-- centre -->
+  <div class="center">
+    <div class="pill left">Nos valeurs</div>
 
-/* HEADLINE */
-.headline {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  color: #1e88e5;
-  padding: 22px 36px;
-  border-radius: 50px;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
+    <div class="logo-box">V4F</div>
 
-/* CENTER */
-.center {
-  position: absolute;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+    <div class="pill right">Nos métiers</div>
+  </div>
 
-.logo-box {
-  width: 110px;
-  height: 110px;
-  background: linear-gradient(135deg, #0a2b80, #1e88e5);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: 700;
-}
+  <!-- valeurs -->
+  <div class="bubble left b1">Simplicité</div>
+  <div class="bubble left b2">Humilité</div>
+  <div class="bubble left b3">Sens du service</div>
 
-.pill {
-  background: white;
-  color: #0a2b80;
-  padding: 10px 18px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 14px;
-}
+  <!-- métiers -->
+  <div class="bubble right b4">Reportings</div>
+  <div class="bubble right b5">Contrôle de gestion</div>
+  <div class="bubble right b6">Comptabilité</div>
+  <div class="bubble right b7">Trésorerie</div>
 
-/* BUBBLES */
-.bubble {
-  position: absolute;
-  background: white;
-  color: #0a2b80;
-  padding: 10px 18px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 600;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
+</main>
 
-/* LEFT */
-.left.b1 { left: 120px; top: 260px; }
-.left.b2 { left: 240px; top: 420px; }
-.left.b3 { left: 180px; bottom: 160px; }
-
-/* RIGHT */
-.right.b4 { right: 200px; top: 240px; }
-.right.b5 { right: 160px; top: 360px; }
-.right.b6 { right: 260px; bottom: 260px; }
-.right.b7 { right: 200px; bottom: 140px; }
+</body>
+</html>
