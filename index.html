@@ -1,36 +1,230 @@
-<div class="schema">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Value4Finance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- CONNEXIONS -->
-  <svg class="connections" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
-    <!-- vers valeurs -->
-    <path d="M500 250 C 380 200, 260 160, 180 130" />
-    <path d="M500 250 C 380 250, 260 300, 180 350" />
+  <style>
+    :root {
+      --blue-main: #002777;
+      --blue-accent: #18cbfc;
+      --white: #ffffff;
+    }
 
-    <!-- vers métiers -->
-    <path d="M500 250 C 620 200, 740 160, 820 130" />
-    <path d="M500 250 C 620 250, 740 300, 820 350" />
-  </svg>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <!-- VALEURS -->
-  <div class="values">
-    <div class="bubble">Simplicité</div>
-    <div class="bubble">Humilité</div>
-    <div class="bubble">Sens du service</div>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #002777, #0b3ea8);
+      color: white;
+    }
+
+    /* HEADER */
+    .header {
+      padding: 20px 40px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: var(--blue-accent);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--blue-main);
+      border: none;
+      border-radius: 999px;
+      padding: 10px 20px;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 40px;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero-text {
+      background: white;
+      color: var(--blue-accent);
+      padding: 18px 30px;
+      border-radius: 999px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 80px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    /* SCHEMA */
+    .schema {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .connections {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .connections path {
+      stroke: var(--blue-accent);
+      stroke-width: 2;
+      fill: none;
+      opacity: 0.6;
+    }
+
+    .values,
+    .jobs {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      z-index: 2;
+    }
+
+    .bubble {
+      background: white;
+      color: var(--blue-main);
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      z-index: 2;
+    }
+
+    .pill {
+      background: var(--blue-accent);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .logo-box {
+      width: 110px;
+      height: 110px;
+      background: linear-gradient(180deg, #002777, #0b3ea8);
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-weight: 700;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .logo-box span {
+      color: var(--blue-accent);
+    }
+
+    @media (max-width: 900px) {
+      .schema {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .connections {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo">Value<span>4</span>Finance</div>
+
+    <ul class="nav-links">
+      <li>Pourquoi V4F ?</li>
+      <li>Notre socle</li>
+      <li>Notre engagement</li>
+      <li>Notre service</li>
+    </ul>
+
+    <button class="btn-primary">Postuler</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="hero-text">
+      Votre partenaire le plus adapté en renfort<br>
+      opérationnel et en production financière
+    </div>
+
+    <div class="schema">
+
+      <svg class="connections" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+        <path d="M500 250 C 380 200, 260 160, 180 130" />
+        <path d="M500 250 C 380 300, 260 330, 180 350" />
+        <path d="M500 250 C 620 200, 740 160, 820 130" />
+        <path d="M500 250 C 620 300, 740 330, 820 350" />
+      </svg>
+
+      <div class="values">
+        <div class="bubble">Simplicité</div>
+        <div class="bubble">Humilité</div>
+        <div class="bubble">Sens du service</div>
+      </div>
+
+      <div class="center">
+        <div class="pill">Nos valeurs</div>
+        <div class="logo-box">V<span>4</span>F</div>
+        <div class="pill">Nos métiers</div>
+      </div>
+
+      <div class="jobs">
+        <div class="bubble">Reportings</div>
+        <div class="bubble">Contrôle de gestion</div>
+        <div class="bubble">Comptabilité</div>
+        <div class="bubble">Trésorerie</div>
+      </div>
+
+    </div>
   </div>
+</section>
 
-  <!-- CENTRE -->
-  <div class="center">
-    <div class="pill left">Nos valeurs</div>
-    <div class="logo-box">V<span>4</span>F</div>
-    <div class="pill right">Nos métiers</div>
-  </div>
-
-  <!-- METIERS -->
-  <div class="jobs">
-    <div class="bubble">Reportings</div>
-    <div class="bubble">Contrôle de gestion</div>
-    <div class="bubble">Comptabilité</div>
-    <div class="bubble">Trésorerie</div>
-  </div>
-
-</div>
+</body>
+</html>
